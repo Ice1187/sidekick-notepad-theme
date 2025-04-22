@@ -10,3 +10,11 @@ Some key features:
 This could be a thought, idea, quote, or any short piece of content that you want to highlight on your grid.
 
 You can connect this to other posts to create a visual relationship between ideas.
+
+Here's an example image:
+
+![Example Image](images/image.jpg)
+
+You can also use remote images:
+
+![Remote Image](https://example.com/image.jpg)
