@@ -1,0 +1,114 @@
+{
+  "posts": [
+    {
+      "id": "post1",
+      "title": "My First Handwritten Note",
+      "type": "grid",
+      "file": "first-post.md",
+      "url": null,
+      "position": {
+        "x": 5,
+        "y": 8
+      },
+      "size": {
+        "width": 10,
+        "height": 2
+      },
+      "styles": {
+        "font": "'Indie Flower', cursive",
+        "color": "#2a6496",
+        "fontSize": "1rem",
+        "fontWeight": "normal",
+        "padding": "5px"
+      }
+    },
+    {
+      "id": "post2",
+      "title": "A Connected Thought",
+      "type": "grid",
+      "file": "second-post.md",
+      "position": {
+        "x": 18,
+        "y": 12
+      },
+      "size": {
+        "width": 8,
+        "height": 2
+      },
+      "styles": {
+        "font": "'Caveat', cursive",
+        "color": "#217844",
+        "fontSize": "1.1rem",
+        "padding": "5px"
+      }
+    },
+    {
+      "id": "post3",
+      "title": "Project Idea",
+      "type": "grid",
+      "file": "project-idea.md",
+      "position": {
+        "x": 3,
+        "y": 20
+      },
+      "size": {
+        "width": 8,
+        "height": 3
+      },
+      "styles": {
+        "font": "'Shadows Into Light', cursive",
+        "color": "#9c27b0",
+        "fontSize": "1rem",
+        "padding": "5px"
+      }
+    },
+    {
+      "id": "task1",
+      "title": "Weekly reflection",
+      "type": "task",
+      "file": "weekly-reflection.md",
+      "styles": {
+        "font": "'Indie Flower', cursive",
+        "color": "#333",
+        "circleColor": "#2a6496"
+      }
+    },
+    {
+      "id": "task2",
+      "title": "Reading notes",
+      "type": "task",
+      "file": "reading-notes.md",
+      "styles": {
+        "font": "'Caveat', cursive",
+        "color": "#333",
+        "circleColor": "#217844"
+      }
+    },
+    {
+      "id": "task3",
+      "title": "Future plans",
+      "type": "task",
+      "file": "future-plans.md",
+      "styles": {
+        "font": "'Shadows Into Light', cursive",
+        "color": "#333",
+        "circleColor": "#9c27b0"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from": "post1",
+      "to": "post2",
+      "color": "#6c757d",
+      "width": 2,
+      "dashed": "5,5"
+    },
+    {
+      "from": "post2",
+      "to": "post3",
+      "color": "#28a745",
+      "width": 3
+    }
+  ]
+}
