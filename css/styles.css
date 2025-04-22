@@ -1,0 +1,131 @@
+/* Main container */
+.notebook {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+.header {
+    background-color: #222;
+    color: white;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Content section */
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Date row */
+.date-row {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.date-label {
+    width: 190px;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.date-space {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-left: none;
+}
+
+.date-end {
+    width: 50px;
+    border: 1px solid #ddd;
+    border-left: none;
+}
+
+/* Main grid and list area */
+.main-area {
+    display: flex;
+    height: 500px;
+}
+
+/* Dot grid section */
+.dot-grid {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    position: relative;
+}
+
+.dot {
+    position: relative;
+}
+
+.dot::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Task list section */
+.task-list {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.task-line {
+    flex-grow: 1;
+    height: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-area {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .dot-grid {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .task-list {
+        margin-left: 0;
+    }
+}
